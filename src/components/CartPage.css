@@ -1,0 +1,198 @@
+
+.cart-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* Header for Cart Page */
+.cart-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Container for all cart items */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Cart Item Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    gap: 20px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Cart Item Image */
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Cart Item Details */
+.cart-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.cart-item-price {
+    font-size: 1.1rem;
+    color: #28a745;
+    margin-top: 5px;
+}
+
+/* Quantity Controls for Each Cart Item */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.quantity-display {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Remove Item Button */
+.remove-item-btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    /* Red for remove */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+    background-color: #33d559;;
+}
+
+/* Footer Section of Cart Page */
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-footer button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button for Clearing the Cart */
+.clear-cart-btn {
+    background-color: #dc3545;
+    /* Red for clearing cart */
+}
+
+.clear-cart-btn:hover {
+    background-color: #c82333;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background-color: #007bff;
+    /* Blue for checkout */
+}
+
+.checkout-btn:hover {
+    background-color: #0069d9;
+}
+
+/* Subtotal, Shipping, and Total Information */
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.cart-summary span {
+    color: #333;
+}
+
+.cart-summary .subtotal,
+.cart-summary .shipping-charge,
+.cart-summary .total-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/* Subtotal Row Styling */
+.cart-summary .subtotal {
+    color: #333;
+}
+
+.cart-summary .shipping-charge {
+    color: #555;
+}
+
+.cart-summary .total-price {
+    color: #28a745;
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 50px;
+}
